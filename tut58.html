@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval & setTimeOut</title>
+</head>
+
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("this is a tutorial 58");
+        
+
+        function greet(name){
+            console.log("Hello, good morning!" + name);
+        }
+        setTimeout(greet, 5000, "harry")
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        setInterval(displayTime, 1000)
+    </script>
+</body>
+
+</html>
